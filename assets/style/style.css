@@ -23,3 +23,30 @@ main{
   background-size: cover;
   background-position: center;
 }
+
+
+.text-shadow{
+  color: aliceblue;
+  text-shadow: 1px 1px black, 0px 0px 5px salmon;
+  font-weight: bold;
+  letter-spacing: 0.08rem
+  
+  /* Second Color  in text-shadow is the blur */
+}
+
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+
+.scrollable-y{
+height: 100vh;
+overflow: scroll;
+}
