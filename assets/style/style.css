@@ -46,7 +46,24 @@ input[type=text]:focus {
   width: 100%;
 }
 
-.scrollable-y{
-height: 100vh;
-overflow: scroll;
+.rightbar{
+
+ max-height: 100vh;
+  overflow: auto;
+}
+
+
+.present:hover{
+transform: scale(1.05);
+transition: all 0.5s ease;
+box-shadow: 0px 0px 20px white, 0px 0px 10px salmon;
+}
+
+
+.formstuff:hover{
+
+transform: scale(1.05);
+transform: translateX(12px);
+transition: all 0.5s ease;
+box-shadow: 0px 0px 20px rgb(151, 151, 151), 0px 0px 10px rgb(136, 0, 255);
 }
