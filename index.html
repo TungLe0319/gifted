@@ -50,23 +50,40 @@
           <div class="border-3 border-bottom">
           </div>
           <div>
-            <div class="form-floating mb-3 mt-3">
-              <input type="text" class="form-control" id="bananawordtwo">
-              <label for="bananawordtwo">Search Present</label>
+            <form onsubmit="app.giphysController.getGiphys()">
+
+<div class="form-floating mb-3 mt-3">
+  <input type="text" class="form-control" name="search" id="search" >
+  <label for="search">Search Present</label>
+</div>
+            </form>
+           
+
+            <div class="bg-light rounded elevation-4 p-4 rightbar " id="giphys">
+              
+     
             </div>
           </div>
         </div>
-        <div class="col-md-9 flex-wrap d-flex justify-content-center rightbar" id="giftlisting">
-          <!-- --------------------------------------- -->
-          <div
+        <div class="col-md-9 flex-wrap d-flex justify-content-center rightbar" id="sandboxGifts">
+          <!-- -----------PRESENT TEMPLATE DRAWN HERE---------------------------- -->
+
+
+
+
+          <!-- <div
             class="card mt-3 d-flex justify-content-center align-items-center giftwrap elevation-5 border-dark border-4 border mx-4 my-2 present"
             style="width: 15rem;height: 20rem;">
             <span class="selectable p-5  rounded elevation-2 presentgif  position-relative on-hover">
               <h6 class="position-absolute bottom-0 end-50 ">Open</h6>
             </span>
-          </div>
+          </div> -->
          
           <!-- --------------------------------- -->
+        </div>
+        <div>
+          
+
         </div>
       </div>
     </div>
