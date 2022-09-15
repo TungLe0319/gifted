@@ -52,6 +52,11 @@ input[type=text]:focus {
   overflow: auto;
 }
 
+.leftbar{
+ 
+ max-height: 48vh;
+  overflow: auto; 
+}
 
 .present:hover{
 transform: scale(1.05);

@@ -1,6 +1,7 @@
 export class Giphy {
   constructor(data) {
     this.url = data.images.original.url
+    
     // this.tag = data.tag
   }
 
@@ -8,7 +9,7 @@ export class Giphy {
     return /*html */ `
 
 
-      <img src="${this.url}" alt=""  class="rounded img-fluid p-1 my-2">
+      <img src="${this.url}" alt=""  class="rounded img-fluid elevation-4 p-1 my-2">
             
             
   
