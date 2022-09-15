@@ -1,0 +1,25 @@
+/* BASIC STYLES HERE */
+
+.presentgif{
+  background-image: url(https://media0.giphy.com/media/3oz8xBkRsgPTnbK1GM/giphy.gif?cid=ecf05e47ucx7m37jmktmsc3lsccbdp3v1dnvggcniccpzncs&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+}
+main{
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https://wallpapercave.com/wp/wp8422895.jpg&f=1&nofb=1);
+  background-size: cover;
+  background-position: center;
+}
+
+.formbg{
+   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-vector%2Foverlapping-forms-background_52683-45675.jpg&f=1&nofb=1);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.giftwrap{
+   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.envato.com%2Ffiles%2F67574316%2Fretro_patterns_images%2Fretro_patterns10.jpg&f=1&nofb=1);
+  background-size: cover;
+  background-position: center;
+}
