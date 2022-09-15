@@ -16,13 +16,13 @@ export class SandBoxGiphy {
 <div
   class="card mt-3 d-flex justify-content-center align-items-center  elevation-5 border-dark border-4 border mx-4 my-2 present"
   style="width: 15rem;height: 20rem;">
-  <div>
+  <div class="mb-2">
     <img src="${
       this.url
     }" alt="" style="width:8rem;" class="rounded elevation-4">
   </div>
-  <div class="d-flex text-center text-shadow">
-    <h3>${!this.tag ? '': `${this.tag}` }</h3>
+  <div class="d-flex text-center text-shadow p-3">
+    <h5>${!this.tag ? '': `${this.tag}` }</h5>
   </div>
 </div>
 
