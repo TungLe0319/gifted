@@ -33,14 +33,14 @@
             <h2>Gifted <i class="mdi mdi-gift"></i></h2>
           </span>
           <!-- -----------------FORM -->
-          <form onsubmit="" class="">
+          <form onsubmit="app.sandboxGiphyController.addGiphy()" class="">
             <div class="form-floating mb-3 ">
-              <input type="text" class="form-control" id="bananaword" placeholder="Tag">
-              <label for="bananaword">Tag</label>
+              <input type="text" class="form-control" id="tag" name="tag" placeholder="Tag">
+              <label for="tag">Tag</label>
             </div>
             <div class="form-floating">
-              <input type="url" class="form-control" id="orangeword" placeholder="Url">
-              <label for="orangeword">Url</label>
+              <input type="text" class="form-control" id="url" name="url" placeholder="Url" required>
+              <label for="url">Url</label>
             </div>
             <div class="d-flex justify-content-end">
               <button type="submit" class="btn btn-primary my-2 p-2">Submit</button>

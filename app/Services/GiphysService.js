@@ -3,6 +3,15 @@ import { Giphy } from "../Models/Giphy.js";
 import { GiphyApi } from './AxiosService.js';
 
 class GiphysService {
+  fillForm(id) {
+    let tag = document.getElementById('tag')
+    let url = document.getElementById('url')
+    let gif = appState.giphys.find(g => g.id == id)
+    // @ts-ignore
+    tag.value = gif.tag
+    // @ts-ignore
+    url.value = gif.url
+  }
   
   async getGiphys(search) {
   
@@ -11,6 +20,7 @@ class GiphysService {
 
       console.log(res.data.data);
       appState.giphys = res.data.data.map(gif=> new Giphy(gif))
+      console.log(appState.giphys)
      
   }
 }

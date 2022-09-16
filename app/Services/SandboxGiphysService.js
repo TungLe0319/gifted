@@ -1,10 +1,27 @@
 import { appState } from '../AppState.js';
+import { Giphy } from '../Models/Giphy.js';
 import { SandBoxGiphy } from '../Models/SandboxGiphy.js';
+import { getFormData } from '../Utils/FormHandler.js';
 import { sandBoxServer } from './AxiosService.js';
 
 // api.giphy.com/v1/gifs/search
 
 class SandboxGiphyService {
+  async addGiphy() {
+    // @ts-ignore
+    window.event.preventDefault()
+    // @ts-ignore
+    const form = window.event.target
+    let formData = getFormData(form)
+    // @ts-ignore
+    form.reset()
+    console.log(formData)
+    const res = await sandBoxServer.post('/api/gifts', formData)
+    console.log(res.data)
+    let newGiphy = new SandBoxGiphy(res.data)
+    console.log(newGiphy)
+    appState.sandboxGiphys = [newGiphy, ...appState.sandboxGiphys]
+  }
   async getGiphys() {
     const res = await sandBoxServer.get('/api/gifts', {
     });

@@ -21,19 +21,27 @@ export class SandboxGiphyController {
     try {
       await sandboxGiphyService.getGiphys();
     } catch (error) {
-      console.error('[]', error);
+      console.error('[getGiphys]', error);
       Pop.error(error);
     }
   }
 
 
-async flipBool(id){
-  try {
+  async flipBool(id){
+    try {
       await sandboxGiphyService.flipBool(id)
     } catch (error) {
-      console.error('[]',error)
+      console.error('[FlipBool]',error)
       Pop.error(error)
     }
-}
+  }
 
+  async addGiphy() {
+    try {
+      sandboxGiphyService.addGiphy()
+    } catch (error) {
+      console.error('[FlipBool]',error)
+      Pop.error(error)
+    }
+  }
 }
