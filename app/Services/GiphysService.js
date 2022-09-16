@@ -13,21 +13,21 @@ class GiphysService {
     url.value = gif.url;
   }
 
-  async getGiphys(search) {
+  async getGiphys(searchInput) {
     const res = await GiphyApi.get(`/search`, {
       params: {
         api_key: 'SHAhnnBWk8sW7Pyga6hif9bQ8LLrlDj3',
-        limit: 50,
+        limit: 20,
         offset: 0,
         rating: 'pg-13',
         lang: 'en',
-        q: search
+        q: searchInput
       },
     });
 
-    console.log(res.data.data);
+    // console.log(res.data.data);
     appState.giphys = res.data.data.map((gif) => new Giphy(gif));
-    console.log(appState.giphys);
+    // console.log(appState.giphys);
   }
 }
 

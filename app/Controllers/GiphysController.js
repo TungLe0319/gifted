@@ -40,3 +40,24 @@ export class GiphysController {
     }
   }
 }
+
+// NOTE this way allows it to search gifs on Typing rather than hitting ENTER.
+/**
+ *   async getGiphys() {
+    try {
+      // @ts-ignore
+      window.event.preventDefault();
+      // @ts-ignore
+      let searchInput = window.event.target.value
+      // let formData = getFormData(searchInput);
+      // @ts-ignore
+      console.log(searchInput);
+      
+      // @ts-ignore
+      await giphysService.getGiphys(searchInput);
+    } catch (error) {
+      console.error('[getGiphys]', error);
+      Pop.error(error);
+    }
+  }
+ */
